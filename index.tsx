@@ -34,9 +34,11 @@ const Column = ({ data }) => {
 }
 
 const App = () => {
-  return <div class="board">
-    {columnData.map( columnData => <Column data={columnData} />)}
+  return (
+    <div class="board">
+      {columnData.map( columnData => <Column data={columnData} />)}
     </div>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
